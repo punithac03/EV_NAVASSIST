@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      href="{% static 'Features_Page/features.css' %}"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <div class="index_1">
+      <div class="nav-bar">
+        <ul>
+          <li>
+            <a href="/home">Home</a>
+          </li>
+          <li>
+            <a href="/signout"><button>Logout</button></a>
+          </li>
+        </ul>
+      </div>
+      <div class="key-features">
+        <div class="features">
+          <a href="/routing"> Routing</a>
+        </div>
+        <div class="features">
+          <a href="/slotbooking">Charging Slot Booking </a>
+        </div>
+        <div class="features">
+          <a href="/breakdownassistance">Breakdown Assistance </a>
+        </div>
+      </div>
+      <script src="{% static 'SignUp_Page/registration.js' %}" defer></script>
+    </div>
+  </body>
+</html>

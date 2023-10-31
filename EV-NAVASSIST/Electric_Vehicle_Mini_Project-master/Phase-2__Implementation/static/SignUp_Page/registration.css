@@ -1,0 +1,94 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: rgba(71, 195, 195, 0.75);
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(35, 43, 43, 0.75);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(35, 43, 43, 0.25),
+      rgba(35, 43, 43, 0.25)
+    ),
+    url(index_1.png);
+    position: relative; */
+}
+button {
+  padding: 12px 12px;
+  background-color: rgb(35, 43, 43, 0.75);
+  color: #d8c7c7;
+  border: 1.5px ridge rgb(35, 43, 43, 0.75);
+  border-radius: 8px;
+  outline: 2px solid rgb(35, 43, 43, 0.75);
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 175px;
+}
+
+button:hover {
+  outline-offset: 3px;
+}
+
+input {
+  height: 45px;
+  border-bottom: 2px outset rgb(35, 43, 43, 0.75);
+  border-radius: 8px;
+  width: 100%;
+  padding: 5%;
+  margin-bottom: 1rem;
+}
+.index_1 {
+  width:100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(index_1.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+
+label {
+  font-weight: bolder;
+  transform: translate(-25%, -25%);
+  /* pointer-events: none; */
+  color: rgba(71, 195, 195, 0.75);
+  margin: 20px 10px;
+}
+
+.registration-form {
+  margin-bottom: 50px;
+  position: relative;
+  border: 2px solid rgb(35, 43, 43, 0.75);
+  border-radius: 4%;
+  padding: 1.5rem;
+  /* margin-inline: auto; */
+  width: 500px;
+}
+
+.main-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  padding: 1.35rem;
+}
+.old-user {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

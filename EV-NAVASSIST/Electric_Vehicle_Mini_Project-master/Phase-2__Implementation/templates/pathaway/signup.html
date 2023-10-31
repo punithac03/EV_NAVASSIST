@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>User Registration</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% load static %}
+    <link
+      rel="stylesheet"
+      href="{% static 'SignUP_Page/registration.css' %}"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="index_1">
+      <div class="navigation">
+        <nav>
+          <img src="" alt="" />
+        </nav>
+      </div>
+
+      <h1>User Registration</h1>
+      <div class="main-body">
+        <div class="success-error-messages">
+          {% if messages.errors %}
+          <ul>
+            {% for error in messages.errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %} {% if messages.success %}
+          <ul>
+            {% for success in messages.success %}
+            <li>{{ success }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+
+        <div class="registration-form">
+          <form action="/signup" method="post">
+            {% csrf_token %}
+            <label for="username">Username</label><br />
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Only letters and digits"
+              required
+            />
+            <br />
+
+            <label for="firstname">First Name</label><br />
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="Enter your first name"
+              required
+            />
+            <br />
+
+            <label for="lastname">Last Name</label><br />
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Enter your last name"
+              required
+            />
+            <br />
+
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ravindrajoshi@gmail.com"
+              required
+            />
+            <br />
+
+            <label for="contact-number">Contact Number</label><br />
+            <input
+              type="tel"
+              id="contact-number"
+              name="contactnumber"
+              pattern="[0-9]{10}"
+              placeholder="1234567890"
+              required
+            />
+            <br />
+
+            <label for="password">Password</label><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Minimum 8 characters"
+              required
+            />
+            <br />
+
+            <label for="confirm-password">Confirm Password</label><br />
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm_password"
+              required
+            />
+            <br />
+
+            <button type="submit">Sign Up</button><br />
+          </form>
+          <div class="old-user">
+            <p>Already have an account?</p>
+            <a href="/signin">Login here</a>
+          </div>
+        </div>
+      </div>
+      <script src="{% static 'SignUp_Page/registration.js' %}" defer></script>
+    </div>
+  </body>
+</html>

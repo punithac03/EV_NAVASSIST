@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PATHAWAY</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'Home_Page/index.css' %}"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="index_1">
+      <nav>
+        <img
+          src="{% static 'Home_Page/indexLogo.jpg' %}"
+          alt="Logo"
+          class="indexLogo"
+          title="indexLogo"
+        />
+        <ul>
+          <li class="login">
+            <a href="/signin"><button>Login</button></a>
+          </li>
+          <li class="signUp">
+            <a href="/signup"><button>SignUp</button></a>
+          </li>
+        </ul>
+      </nav>
+
+      <h1 class="title">PATHAWAY</h1>
+    </div>
+    <br />
+    <div class="container">
+      <h1 class="heading">Why Choose Us ?</h1>
+      <br />
+      <div class="sec33">
+        <img src="{% static 'Home_Page/feature_1.png' %}" />
+        <h3>Planning Trips</h3>
+        <p>
+          A navigation system that provides EV users with an optimized route
+          from their source location to their destination, ensuring the presence
+          of charging stations along the way. The system accurately displays the
+          map, indicating the locations of charging stations.
+        </p>
+      </div>
+
+      <div class="sec33">
+        <img src="{% static 'Home_Page/feature_2.png' %}" />
+        <h3>Book Slots for Charging</h3>
+        <p>
+          A seamless, user-friendly, efficient, and reliable booking mechanism
+          for EV users to reserve a charging slot at the selected charging
+          station. The system allows customers to view the availability of
+          charging slots in real-time, select a preferred charging station based
+          on their route, and successfully book a slot for the desired time.
+        </p>
+      </div>
+      <div class="sec33">
+        <img src="{% static 'Home_Page/feature_3.jpg' %}" />
+        <h3>Breakdown Assistance</h3>
+        <p>
+          A system that assists EV users in case of breakdowns or emergencies
+          during their journey. The system that is capable of identifying the
+          user's location when a breakdown occurs and display relevant
+          information, such as nearby assistance centers that can provide the
+          necessary help.
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-details">
+      <div class="contacts">
+        <ul>
+          <li>
+            <a href="https://www.whatsapp.com"
+              ><img src="{% static 'Home_Page/whatsapp.png' %}" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.gmail.com"
+              ><img src="{% static 'Home_Page/mail-inbox-app.png' %}" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com"
+              ><img src="{% static 'Home_Page/instagram.png' %}" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="address">
+        <address>
+          <h3>Headquarters: Mysuru, India</h3>
+          <br />
+          A-148, Radison Corporate Tower, Sector- 137, Mysuru, Karnataka
+          (570016)
+        </address>
+      </div>
+    </div>
+    <script src="{% static 'Home_Page/index.js' %}" defer></script>
+  </body>
+</html>
